@@ -8,581 +8,553 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <title>Mainecraft</title>
-<style>
-    .acordeon-contenido {
-        display: none; /* Oculta todos los contenidos al cargar la página */
-        float: right; /* Alinea el contenido a la derecha */
-        max-width: 50%; /* Establece un ancho máximo para el contenido */
-    }
-</style>
 </head>
 <body id="cuerpo">
-    
+    <div class="cuadrícula">
+        <div class="item-1"> 
+            <ul>
+            <li><a href="#info1">Información 1</a></li>
+            <li><a href="#info2">Información 2</a></li>
+            <li><a href="#info3">Videos relacionados</a></li>
+            </ul>
+        </div>
+        <div class="item-2">
 
-       
-          <h1 id="title">{Ðï@⚡}</h1>
-          
-    
+            
+            <button class="active" id="toggleButton">Alternar Ajuste en Línea</button>
+
+
+        </div>
+        <div class="item-3">
+          <main class="container1">  
+            <section id="Inicio" class="Inicio">
+
+                <h1>Notas JS</h1>
+            
+                <p>Esta herramienta me permite buscar temas especificos en los temas que estoy estudiando, y que cuando necesite aplicarlos esten disponibles al instante como una base de datos que guarda toda la informacion que recopile en todo mi trayecto, pero principalmnete para demostrar lo que se y al mismo tiempo enseñarlo a un publico y entenderlo aun mas.</p>
+
+                <p>Las notas tomadas y las ideas plasmadas son el reflejo de una variedad de informacion adquirida en el aprendizaje independiente y clases en linea gratuitas, asi como tambien eventos en linea para developers.</p>
+
+
+            </section>
+
+            <section id="videos" class="videos">
+                <h1>Clases grabadas personales.</h1>
+                    <!-- Sección-1 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Introducción a JavaScript, variables.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>1 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://us02web.zoom.us/rec/share/erYxlywGdXgqSGORa7J_yZvn8WzOa5KK56FE2jlR2rpv3IHmoKqqilO3vTkDyy_Q.YeMNpOFqZ3qtFix4" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="WhM922h#">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-2-->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Terminando con variables, constantes y los tipos de datos en JavaScript.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>2 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVU8ztxbLGqxgb9rHR1J1uJheDhv-2Fx70WfhhxsydNudf5CJzu1emxt4EQ5Z-2Bm8tFKh1XYSY8kmfF2vuO0R3kgwJN0AWIZMtOEF0l1FMCGPNcGWOQnDfdz1n15oct4RSh6nA-3DCX6m_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfR0vyFMZJPA1PU3AMyCjOJ7AFFKWVuBUrXI1mdtAQ9ul1-2F56cgPG-2BVyUvoLuymWG5h2-2F8-2FFKxggzmlL-2F49bWIAipGzbYxOacINxwxPRIbFPijrbq94NiEZwGm0XTJBeyZW9nZ9Go-2Bkx1pawLoWbp0AUXtd5go1PXy6K1O2Ke5yK1qCIyTQd455z5xY1T5rg5g0Uy01cEmFJn1aec5CTkwo-2F318L18VvFXRRISG1Ar2-2B6oPHt3LAwvbjJfGzw-2B3MGF588t713wGUb0K5Gj5X9T4f44Q42fFQ0aC46RGhu2LYWBQzzvuFLUVR57AGJuieErHVB7Mn-2BM1HCvxtitr7Uvu6Hmq7ygbNM73eVhygGpGXBUFox8ytfQSpHOpOcK1pfxm9fX-2FCukytDb8e98cduyPIdkE3oROvkA7jXsYEGqq15vW2m42vrFiPmwgZb6PfRvnVU-2BrPDuLg8Itahvod3PhP7PgB-2FrE8zGUXyzeA1X48EJQ3m4IJyWwgenHe1zLcL2BcyUQSyrTS7AWH1Ey6HX2Xgg3StXVMAelWR7BIG9Arra7Vphkc5jPxlR0CsaK86PRdnaF6-2BN5IuaSO9Y0awf-2Fc8vOM2zXHKd6-2BcmwEQDgsAEElubPlWArJVaTvmJe6X8" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="rXD0.QUi">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-3 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Operadores básicos, aritméticos y de asignación.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>3 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVXw3hCCDXsw0rI0kbtzhQoprGWxfq1v4gsgS65Qr8HTAwW-2BN-2B0VgFvCXCCqC4rrCHiaZ1t4heutCJrvuTEKVJtclgAJkKQDVSw5L2zt-2B5WZ3Q-2BTxqejIkjpMpybFDOri8o-3Dlg4N_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfOD13uU6g7w67V35ZSLBE0Mm89bN8ArpEqNaXFnUhl0pA7DqYJGuZxo3OyncLQu9PPVaa4By-2Fz0lNRS6BbV3qlrTRIQaUDCBBY1cMeYpZFjAcmwr9V5HV2kFwa-2FuZ4gLMbXjc8O07bCr8XVwZBn8cEccOO8gC3hFIj-2BYG4mv-2FFfeY37b-2FMBynFzEiPuNSGfVlCBhkK3rfasTYvv-2B-2BqjfWOjNeMD2415MHmUAC4kXunkvozZbQSutlsE5YrLEqwDC7BpMkCNpGG0EsPCCri38mBlCGFZJZ8YBn1nwvkhflrKwaz2dTyyj8EGd4OXhxlfsgFaxhEPc7WtnMT2aGgmpo27CxwGyJukc1mxhPLUzhW4Uk6qwRuZfqLXiNqK8XTLckSqbrwT9u5ugKT3jDajUXq7Cheogj-2Bks6chEhbcyqoVWd1IOTHtBjr5gYRQiV9xhAIz-2BpNa8I6b8UXdEJW5LZVMmTXhVVAfUkrxxxmjhyD2eOobMHbA72gQzlzO-2B7VpN42tgpzMw7sViB8UapeB2Syx5r8840KwVvq3jKP-2BueswrtnD4NadCAde4UP-2B2GIg3S1PPP1EWwKVDZOOW-2BhzYMU-2BXZJSn6Sx-2FdB7wsjhT7ztdeXxwawLP7Ydh5CUwENVno" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="4L%a^k0M">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-4 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Funciones, objetos y arreglos.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>4 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVUeOMhKfABUSvGP4G77wZiQcN3bK5QwG3GZj0bsPL3y6qQx6xENoHo2hPof5qNz21Vf3PiYDWhouvLB6OL35idtoj0da7wrVKcQH67mmJFMPKRHW2um8TE1SiQ0Q3lKCGo-3Dj8Rz_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfIQHL-2BG31t8QrEM9TmqZjwG5aSrszFIr0QrR20EzBczQr1igCNIO8YJx-2FBOzcRllptHzx4Omu5jhumubDzjzGMZ2ijMhg3ustzZGTBHz6WFKP8zR3-2FF-2B8M039fHpaBncHTJ3ptGIGX5A98gtv5HxVVZYM0lra9-2BMjwVNAkEkjDtOzVp2ySK2iOS2inLADYLkR1-2B4Ibff6Y5bMv-2BKela2mkCRqYaxMEm7LJjt-2BtsYIMF7W-2F-2F53Jy6o7-2BjEd49tFD9c5rsImOXLo-2BmzBQGWKYUJBYWwrkpjYjtKxV2xQmWPDlpezdBBhRRClxa7jqOl4kffqOmsizQ6jzMZpug0TI7kDb3Ga0CA6N21RPJhK4v525f3yMZMuLQyiKKcc9c5BTwy29psmsE4-2BoGVJ3P2tOvF0Ok8mlClqeCUJmGhgc5zHXWW-2B8uwxwdAHo71o8nrJ1x-2BJEROBL-2B4uvhIpiDPXfxyp-2FaMwakXQUmPWcLQFqRFcJuHiD-2BxY83lhfREUaQchrhAXfJq1ci629CU7sfCzF6kDN57CVzFD-2FibK-2BxrmxcCUN5jGjwyTv4qbL880mtMZjRi-2FaARByWMS8V5s0IW-2Bw-2ByaD5OyveFqovoCii-2Fvycs4GBPIiDgnffBtHQOcOfN4UUk" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="EPv7?=#&">
+                
+            </div>
+        </div>
+            </li>
+        
+             <!-- Sección-5 -->
+             <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Terminando con arreglos y trabajando con cadenas de texto.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>5 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVXqRX6ySk59jMU8py5EArFQJVI1DY4kyqGHTu7kIM40Ddx4JlqNlJp-2FBicL5tIqRSotf9JhW-2FxD45aEuw3qvqYQi2dZ6XrRMNBb2TF2aI-2FhETnnTIYKXF2uZYniBxAO9h0-3Dxg5w_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfl6111BLz-2FkmHkzpRtLyLCV34Gy0V0OJ7pY23dXBCn51qPeUua2dl-2BpUBYK3HMf7huf-2BSJ3kZuISHTL7KF5lBE-2FbK-2BbK6rWfq9o3dnes9tiIMSRjHCdD55b3ZIi-2FWlN6DFiTBU4hxhaalq3GSNVezg6kLB3-2BHfZoJF6teWuEPQi8oaSxh9hUg1W0aSSWQSc6SJMJtGFM2XEuSYQosOZLKBLwSieMIaO87ioWImmW8AbybnUyuiQMk76p5yJ3oQ8HkuzChNnLm4LqexZlOve8Q-2F3vr2tnhhDaqNq2gQ2kG82oop2UsiwZVs-2BlV4XHW0OGPXDbQ7L5dfeadQzhp1We2y27rVZJyWrlDJR5ygTy7rhCdBkx-2BiZjJPcBjvo1NVznmRAavTwsg-2FdSJL18Sszpc7B1Ey1h6FyFpRnFSk3kQWap6I6D-2BefqfLuR7HWb40ByGu6WO3ETfer8YPpemFpS6Y63zhT1CIOGh4pFb8f5dzt0zdf7ZyySY9vrz6L5fTcjtrJaogN4owDSjqZDl12HjMfTVXOqk9-2FsjQmpn7hCLCxZx0zYWNLNKmdemmvhSeOti0aAeT6tOZU1s6gZrDR-2FQ54YcFaD2tED4bSOQksm1VUi4KUwFshepzyF9kB2XnRbr" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="@yEBi0*?">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-6 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Métodos para cadenas y los operadores de comparación.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>8 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVX-2F20gtLL55-2F2oJUDkY6FJ-2FMgHN-2BEsHzg3kI5ZKEeFqey0fg6a9oC3ZE5el767Xiu8IioB5D3WFOzYiKq3p3Ds35fkKRr52u5D0GpgKhY1sGZDQaRfwPTWqhrZo8YqUrC8-3DsYW0_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfg8Gj-2BhUk-2Fm-2Fs3JqNQ8KmOqd3Z5a632eR561G0SqxN3hsZmrVQLjcAykwZ2ozXV1-2BacaeBmuacRcu5gssV2CE013IZEB8eGRLZEd-2B6LhvlgRdJFICkO4PQspDXxlaPC727LJoLjGaNpbvL0GygJTD-2Bk-2BiEHboD-2F-2F2ZCHofhVZWcXPdzaP0mvTUgaek8I4qox5rMOaV2C5ec7cM5247OcFKdoMPQfckjT7-2BtwleWYU9Gq3yTqA3vBAk40uTktS3SfiHjm46EgqedXs-2Bjsr1Z2QBYnvKCpTyAPLus0UOmJFcyjO2QE1ywa24VQXkThw43Bnlhau7RgMXHHoOtGKtfbPAvWMqPCiVUg1k9y3-2BWCpU-2BvPYYs-2F0mG7Rbb1q-2FUftbjFGtZulYdp6pEyKkB06tjEDEoiKc0NtJRFLCcEx6mX-2BsvPI-2BbxiPVHK5dapMllicx-2FmCp7pdnMd-2FpEhHXUA0NCinGrQSuVJi5A-2BLs1o-2FDTkbsKncSTJDqgoEUQEy-2BJ9uWrXPamjppBbObD3HdixICYPyKvoX3We-2Bw7Bb6Gl4aeItAd2xBJb-2FhosrMxTt36FeIIBkc-2F5nX-2FfKrzxR7cy5ktlpkOtF9hZrjq5y1Z5Y7skCnfDz-2B1imRFRe-2BUwcfmi6OO" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="8+B!r9iN">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-7 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Operadores lógicos y trabajando con números.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>9 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVVjjWQWTMLkRkEot86DOL5-2B9jOz3rOpO7rp-2BZ3SGNJqzHL0odB7zMYRTTI-2FDyQyI9uE9sB8Z1OZ9akx7ZnGNppEJSfCEmYWot2lF35M50-2BgZ7abex6jzfBr1Y5zgowGy2M-3DFD2M_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfa8FWBN-2FtULd8ZAceO-2Bcefu82JFnb8Aad9nPym6XYWdlWmZVfW8X3-2BY2MO4-2FBldufdGMlq4en18H-2BJeTMZQQcS1JCNgbBYBG8U81QT7QH9jsYZngen7O1qK3zQw3n6FHnSavYZTDmzRIKQ6daY4woEe-2BqGffBf83NTOV0W6wvKGj2PXLtvrnS2aOMaxwm4nV9bsjKr5lGufPS7Gy22UKZaF9YlxuEciP69Ja3fuoLr7htjYt2gC-2F2XDbp2xIquobOmSebIoNm7tqm60OHZ5MohdqVZOqU4Wfpn5GUN6C2puLi-2BZFV-2ByKO7ocqyhTrgtQkur6ePz9iim1CYZLzRZd0XGf3lOQ2a5Wqqx9unZlmNvRMP9iQ1pocQM9eLiZI8eYgPSdcuJkGTXwt1hwK4CwIeaM2Km45nGAmtw79NXENi0A2jkhultiBaY1JGI7grvsTvW9EzjkGn012zt5zb5Ypm-2BpZpvRAU9hjGVoiwmYYxe9qiNgERXBqox-2Fzo51pDMEbtF-2BjBh0BFZgEVNI6e4xu-2B-2FL2Sfm2VWWUM3HB05Az4gqs0E-2FHUKtcIT8xjYOAg5nVT5sVXKXc0rBFh6hVbf-2B-2BIDSaRBOi3iXovX1NGep0BM7ir-2FRFGv8rZ3W85nd3-2FvLG" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="@t!gP3Vr">
+                
+            </div>
+        </div>
+            </li>
+        
+             <!-- Sección-8 -->
+             <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Charla sobre pagos, condicionales, sentencia if, operador ternario y la sentencia switch.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>10 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVUgG3IyvUg0gAx76K422sh6aNzDKLUiLyEdACk8jY8pRx3-2FYrz0b8HMSh62loby6LMLI-2BPhYu2PziT0ukdGTwQl9syruWljmsECG2AfoW8-2BIsk-2FVucqPPlhIrAxvEN-2ByHY-3DS7Wx_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmf6VCNjkqmb5GyaURWZ6JoSwb4ToPbUCazD4e1FfZTilOYM0-2BeyhgGtyovvissbSs-2FWIV-2B0K9Bm4iq0IrkS-2Fa2SHnS0eZrYu5oJHat7fd1djbWSiQfu7tcUQ15yRN9qJfjUL0Zqb1AL3ApTuGzDMYhFUGfXF9i64HjXAbn8yYIu4L286xZv0-2FRHWeiGtw13LQ3uGiGshjfdpFnh6rojta4Lda8Z-2Fb34mrAcYHnydzirFuNc1hUc8xnfp3MG8P75ZV7FaLycZff1m-2FRS8mEIx0qEJqBeAJFjKXwMia5bvRBpRcMpnaa7FrMNut5ASDuMmXD5IyzJIonkfFyumYhJ7e7v3nunFQg4e42Yr3FQF0qtFhycRqP-2B-2FiqIkxivEJDngr9NWCda-2BJoH-2Beqn7XmDq4apwu9vv3kfTHBZ4o7XZ-2F4cAF4FE-2F99ba11lDuO3gGOKlpyVKKbtHzr44Ds-2FQxTtJD3XDjdO7V8wpeGRfR9eOdgvVQ3COnOXeHrY-2BmYHSWVRkvxKBNWqy8V0qi7hfq7Bv6W-2BuMt3FjBAn66nKqEadlFZWJVoY49aNQxPo-2F611G659mvshdOOR6wjVntdhoLTtk-2BNbXYJBSw7oilpqa6gXoyDjOw4PkhE2Q4w5SwsuYow9K" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="Z65@.i!i">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-9 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Bucles while, do while y for.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>11 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://us02web.zoom.us/rec/share/OlK1xRTnH4M3uux9Fx7uQEflcBfWt3z6FtKJiS65aTa_TbxFGb2-IPp0PMulDr79.C7luYbNCZJGVanj7" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="#N!2d7?x">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-10 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Métodos para arreglos y objetos.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>12 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://us02web.zoom.us/rec/share/5s80qu-2UK1LFGYc2-nT_9GJCjQX_n4xChd-_OPDvGAPEU1XyIA5H0PajYFC-pW3._qLvmxvjhiRb2naF" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="08TAbf*m">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-11 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Introducción a HTML, conceptos básicos y estructura básica de un documento HTML.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>15 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="html">&#60;HTML&#62;
+                </mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://us02web.zoom.us/rec/share/QAiOwgd2ZVbvCxDLScEa9_U-U6RaVgFH8DOGx46wMn8GG-8A5iR1FHTb5PvZmu0Z.iUF-42e8PKa-O1GB" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="GrbL=s7W">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-12 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Jerarquía de los encabezados y párrafos, elementos de bloque y en línea, etiquetas de presentación y semánticas, etiquetas de estructura semántica y elementos HTML (listas, tablas, multimedia).</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>16 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="html">&#60;HTML&#62;
+                </mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://us02web.zoom.us/rec/share/-sIUzQhZnXida_eWC2o1Y7EaSGCPwcHI6KpRT7RJzez2Nd7ke5yvpVxx-7HA0noO.oFKIMvxQWB__4f8U" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="?1PVWufP">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-13 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">La etiqueta audio, elementos incrustados y los elementos de formulario. Actividad en grupo.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>17 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="html">&#60;HTML&#62;
+                </mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://us02web.zoom.us/rec/share/kyiibSlTocNT9Mrb1jbiCWw-mnur6H8KPWgzcWelBuCr4y6TjvkuscVZVuGT8L-b.7cdJEi0pva-9VApf" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="xGr!yy2r">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-14 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Terminando con elementos de formulario y la introducción a HTML.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>18 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://us02web.zoom.us/rec/share/VZIAhKlOhG_9zi0CW13QfC6CQBBefbX0dUSAWzuGjwlhsA0joTsC7bQpRryQ5cAo.teXwtYiZarfD64Zh" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="ST%P71fW">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-15 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Introducción a CSS, básicos de CSS, reglas y selectores.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>19 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="css">&#60;CSS&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://us02web.zoom.us/rec/share/GpBxxpF8YaQI1ecLncsYaxApCZRO1NWi6akNRhQrIQr-21qsnVaM5-bXsJmH3lHa.ZzeCk74GLUDy9ewI" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="Y4?1&i6q">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-16 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Pseudo-clases y pseudo-elementos, el algoritmo de CSS, cascada, especificidad, la importancia. </label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>22 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="css">&#60;CSS&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://us02web.zoom.us/rec/share/O9H3ZFyiQ1JdiLTHC801keZEzhz9SV8s_vUfAIpP1UvVrLCEL2H5Lqu-P0av-xOn.rbAyhLGSqjx7SeuM" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="Rt^s9#t2">
+                
+            </div>
+        </div>
+            </li>
+        
+            <!-- Sección-17 -->
+            <li>
+                <!-- Título del acordeón -->
+        <label for="acordeon-toggle1" class="acordeon-titulo">Herencia en CSS, modelo de caja, dimensiones ancho, alto, máximos y mínimos. Overflow controlar el desbordamiento, relleno, borde y redondeo.</label>
+        
+        <!-- Checkbox que controla el acordeón -->
+        <input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
+        
+        <!-- Contenedor del contenido del acordeón -->
+        <div class="acordeon-contenido">
+            <!-- Contenido del acordeón -->
+            <div>
+                <!-- Fecha de la clase -->
+                <p class="fecha">Fecha: <i>23 de abril de 2024</i></p>
+                <!-- Tecnología a estudiar -->
+                <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="css">&#60;CSS&#62;</mark></abbr></p>
+                
+                <!-- Hipervínculo a la página -->
+                <label for="link" class="pregunta">Enlace a la clase :</label>
+                <a class="respuesta" href="https://us02web.zoom.us/rec/share/Tovrdvq4V2LZk8noMiQ8q1rx4Gl31ioCaFT6nv-XeW2gSmS3hAfUqm6HvYLNF04.oacDCBD-7G5wc2Nf" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
+                <br><br>
+                <!-- Contraseña de la clase -->
+                <label for="textoACopiar" class="pregunta">Contraseña:</label>
+                <input class="respuesta" type="text" id="textoACopiar" value="B+Y1GD=B">
+                
+            </div>
+        </div>
+            </li>
+        
+            </section> 
+
+            </main> 
+        
+        <footer>Esta pagina fue creada por Diaz para uso personal no empresarial y reserva todos los derechos de autor xd © 2024/04/28 </footer>
+        
+        <script src="index.js"  defer></script>
+        </body>
+        </html>
+        
+        <!-- Creditos:
+        
+        alt 0142   Ž 
+        alt 0194   Â
+        alt 64     @
+                   y
+        
+        
+        ⚡  -->
    <!-- <video src="background/fondo.mp4" autoplay muted loop class="fondo"></video> -->
-   <main>
-    <main class="container1">   
 
-    <!-- Sección-1 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Introducción a JavaScript, variables.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>1 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://us02web.zoom.us/rec/share/erYxlywGdXgqSGORa7J_yZvn8WzOa5KK56FE2jlR2rpv3IHmoKqqilO3vTkDyy_Q.YeMNpOFqZ3qtFix4" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="WhM922h#">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-2-->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Terminando con variables, constantes y los tipos de datos en JavaScript.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>2 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVU8ztxbLGqxgb9rHR1J1uJheDhv-2Fx70WfhhxsydNudf5CJzu1emxt4EQ5Z-2Bm8tFKh1XYSY8kmfF2vuO0R3kgwJN0AWIZMtOEF0l1FMCGPNcGWOQnDfdz1n15oct4RSh6nA-3DCX6m_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfR0vyFMZJPA1PU3AMyCjOJ7AFFKWVuBUrXI1mdtAQ9ul1-2F56cgPG-2BVyUvoLuymWG5h2-2F8-2FFKxggzmlL-2F49bWIAipGzbYxOacINxwxPRIbFPijrbq94NiEZwGm0XTJBeyZW9nZ9Go-2Bkx1pawLoWbp0AUXtd5go1PXy6K1O2Ke5yK1qCIyTQd455z5xY1T5rg5g0Uy01cEmFJn1aec5CTkwo-2F318L18VvFXRRISG1Ar2-2B6oPHt3LAwvbjJfGzw-2B3MGF588t713wGUb0K5Gj5X9T4f44Q42fFQ0aC46RGhu2LYWBQzzvuFLUVR57AGJuieErHVB7Mn-2BM1HCvxtitr7Uvu6Hmq7ygbNM73eVhygGpGXBUFox8ytfQSpHOpOcK1pfxm9fX-2FCukytDb8e98cduyPIdkE3oROvkA7jXsYEGqq15vW2m42vrFiPmwgZb6PfRvnVU-2BrPDuLg8Itahvod3PhP7PgB-2FrE8zGUXyzeA1X48EJQ3m4IJyWwgenHe1zLcL2BcyUQSyrTS7AWH1Ey6HX2Xgg3StXVMAelWR7BIG9Arra7Vphkc5jPxlR0CsaK86PRdnaF6-2BN5IuaSO9Y0awf-2Fc8vOM2zXHKd6-2BcmwEQDgsAEElubPlWArJVaTvmJe6X8" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="rXD0.QUi">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-3 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Operadores básicos, aritméticos y de asignación.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>3 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVXw3hCCDXsw0rI0kbtzhQoprGWxfq1v4gsgS65Qr8HTAwW-2BN-2B0VgFvCXCCqC4rrCHiaZ1t4heutCJrvuTEKVJtclgAJkKQDVSw5L2zt-2B5WZ3Q-2BTxqejIkjpMpybFDOri8o-3Dlg4N_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfOD13uU6g7w67V35ZSLBE0Mm89bN8ArpEqNaXFnUhl0pA7DqYJGuZxo3OyncLQu9PPVaa4By-2Fz0lNRS6BbV3qlrTRIQaUDCBBY1cMeYpZFjAcmwr9V5HV2kFwa-2FuZ4gLMbXjc8O07bCr8XVwZBn8cEccOO8gC3hFIj-2BYG4mv-2FFfeY37b-2FMBynFzEiPuNSGfVlCBhkK3rfasTYvv-2B-2BqjfWOjNeMD2415MHmUAC4kXunkvozZbQSutlsE5YrLEqwDC7BpMkCNpGG0EsPCCri38mBlCGFZJZ8YBn1nwvkhflrKwaz2dTyyj8EGd4OXhxlfsgFaxhEPc7WtnMT2aGgmpo27CxwGyJukc1mxhPLUzhW4Uk6qwRuZfqLXiNqK8XTLckSqbrwT9u5ugKT3jDajUXq7Cheogj-2Bks6chEhbcyqoVWd1IOTHtBjr5gYRQiV9xhAIz-2BpNa8I6b8UXdEJW5LZVMmTXhVVAfUkrxxxmjhyD2eOobMHbA72gQzlzO-2B7VpN42tgpzMw7sViB8UapeB2Syx5r8840KwVvq3jKP-2BueswrtnD4NadCAde4UP-2B2GIg3S1PPP1EWwKVDZOOW-2BhzYMU-2BXZJSn6Sx-2FdB7wsjhT7ztdeXxwawLP7Ydh5CUwENVno" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="4L%a^k0M">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-4 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Funciones, objetos y arreglos.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>4 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVUeOMhKfABUSvGP4G77wZiQcN3bK5QwG3GZj0bsPL3y6qQx6xENoHo2hPof5qNz21Vf3PiYDWhouvLB6OL35idtoj0da7wrVKcQH67mmJFMPKRHW2um8TE1SiQ0Q3lKCGo-3Dj8Rz_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfIQHL-2BG31t8QrEM9TmqZjwG5aSrszFIr0QrR20EzBczQr1igCNIO8YJx-2FBOzcRllptHzx4Omu5jhumubDzjzGMZ2ijMhg3ustzZGTBHz6WFKP8zR3-2FF-2B8M039fHpaBncHTJ3ptGIGX5A98gtv5HxVVZYM0lra9-2BMjwVNAkEkjDtOzVp2ySK2iOS2inLADYLkR1-2B4Ibff6Y5bMv-2BKela2mkCRqYaxMEm7LJjt-2BtsYIMF7W-2F-2F53Jy6o7-2BjEd49tFD9c5rsImOXLo-2BmzBQGWKYUJBYWwrkpjYjtKxV2xQmWPDlpezdBBhRRClxa7jqOl4kffqOmsizQ6jzMZpug0TI7kDb3Ga0CA6N21RPJhK4v525f3yMZMuLQyiKKcc9c5BTwy29psmsE4-2BoGVJ3P2tOvF0Ok8mlClqeCUJmGhgc5zHXWW-2B8uwxwdAHo71o8nrJ1x-2BJEROBL-2B4uvhIpiDPXfxyp-2FaMwakXQUmPWcLQFqRFcJuHiD-2BxY83lhfREUaQchrhAXfJq1ci629CU7sfCzF6kDN57CVzFD-2FibK-2BxrmxcCUN5jGjwyTv4qbL880mtMZjRi-2FaARByWMS8V5s0IW-2Bw-2ByaD5OyveFqovoCii-2Fvycs4GBPIiDgnffBtHQOcOfN4UUk" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="EPv7?=#&">
-        
-    </div>
-</div>
-    </li>
-
-     <!-- Sección-5 -->
-     <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Terminando con arreglos y trabajando con cadenas de texto.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>5 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVXqRX6ySk59jMU8py5EArFQJVI1DY4kyqGHTu7kIM40Ddx4JlqNlJp-2FBicL5tIqRSotf9JhW-2FxD45aEuw3qvqYQi2dZ6XrRMNBb2TF2aI-2FhETnnTIYKXF2uZYniBxAO9h0-3Dxg5w_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfl6111BLz-2FkmHkzpRtLyLCV34Gy0V0OJ7pY23dXBCn51qPeUua2dl-2BpUBYK3HMf7huf-2BSJ3kZuISHTL7KF5lBE-2FbK-2BbK6rWfq9o3dnes9tiIMSRjHCdD55b3ZIi-2FWlN6DFiTBU4hxhaalq3GSNVezg6kLB3-2BHfZoJF6teWuEPQi8oaSxh9hUg1W0aSSWQSc6SJMJtGFM2XEuSYQosOZLKBLwSieMIaO87ioWImmW8AbybnUyuiQMk76p5yJ3oQ8HkuzChNnLm4LqexZlOve8Q-2F3vr2tnhhDaqNq2gQ2kG82oop2UsiwZVs-2BlV4XHW0OGPXDbQ7L5dfeadQzhp1We2y27rVZJyWrlDJR5ygTy7rhCdBkx-2BiZjJPcBjvo1NVznmRAavTwsg-2FdSJL18Sszpc7B1Ey1h6FyFpRnFSk3kQWap6I6D-2BefqfLuR7HWb40ByGu6WO3ETfer8YPpemFpS6Y63zhT1CIOGh4pFb8f5dzt0zdf7ZyySY9vrz6L5fTcjtrJaogN4owDSjqZDl12HjMfTVXOqk9-2FsjQmpn7hCLCxZx0zYWNLNKmdemmvhSeOti0aAeT6tOZU1s6gZrDR-2FQ54YcFaD2tED4bSOQksm1VUi4KUwFshepzyF9kB2XnRbr" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="@yEBi0*?">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-6 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Métodos para cadenas y los operadores de comparación.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>8 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVX-2F20gtLL55-2F2oJUDkY6FJ-2FMgHN-2BEsHzg3kI5ZKEeFqey0fg6a9oC3ZE5el767Xiu8IioB5D3WFOzYiKq3p3Ds35fkKRr52u5D0GpgKhY1sGZDQaRfwPTWqhrZo8YqUrC8-3DsYW0_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfg8Gj-2BhUk-2Fm-2Fs3JqNQ8KmOqd3Z5a632eR561G0SqxN3hsZmrVQLjcAykwZ2ozXV1-2BacaeBmuacRcu5gssV2CE013IZEB8eGRLZEd-2B6LhvlgRdJFICkO4PQspDXxlaPC727LJoLjGaNpbvL0GygJTD-2Bk-2BiEHboD-2F-2F2ZCHofhVZWcXPdzaP0mvTUgaek8I4qox5rMOaV2C5ec7cM5247OcFKdoMPQfckjT7-2BtwleWYU9Gq3yTqA3vBAk40uTktS3SfiHjm46EgqedXs-2Bjsr1Z2QBYnvKCpTyAPLus0UOmJFcyjO2QE1ywa24VQXkThw43Bnlhau7RgMXHHoOtGKtfbPAvWMqPCiVUg1k9y3-2BWCpU-2BvPYYs-2F0mG7Rbb1q-2FUftbjFGtZulYdp6pEyKkB06tjEDEoiKc0NtJRFLCcEx6mX-2BsvPI-2BbxiPVHK5dapMllicx-2FmCp7pdnMd-2FpEhHXUA0NCinGrQSuVJi5A-2BLs1o-2FDTkbsKncSTJDqgoEUQEy-2BJ9uWrXPamjppBbObD3HdixICYPyKvoX3We-2Bw7Bb6Gl4aeItAd2xBJb-2FhosrMxTt36FeIIBkc-2F5nX-2FfKrzxR7cy5ktlpkOtF9hZrjq5y1Z5Y7skCnfDz-2B1imRFRe-2BUwcfmi6OO" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="8+B!r9iN">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-7 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Operadores lógicos y trabajando con números.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>9 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVVjjWQWTMLkRkEot86DOL5-2B9jOz3rOpO7rp-2BZ3SGNJqzHL0odB7zMYRTTI-2FDyQyI9uE9sB8Z1OZ9akx7ZnGNppEJSfCEmYWot2lF35M50-2BgZ7abex6jzfBr1Y5zgowGy2M-3DFD2M_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmfa8FWBN-2FtULd8ZAceO-2Bcefu82JFnb8Aad9nPym6XYWdlWmZVfW8X3-2BY2MO4-2FBldufdGMlq4en18H-2BJeTMZQQcS1JCNgbBYBG8U81QT7QH9jsYZngen7O1qK3zQw3n6FHnSavYZTDmzRIKQ6daY4woEe-2BqGffBf83NTOV0W6wvKGj2PXLtvrnS2aOMaxwm4nV9bsjKr5lGufPS7Gy22UKZaF9YlxuEciP69Ja3fuoLr7htjYt2gC-2F2XDbp2xIquobOmSebIoNm7tqm60OHZ5MohdqVZOqU4Wfpn5GUN6C2puLi-2BZFV-2ByKO7ocqyhTrgtQkur6ePz9iim1CYZLzRZd0XGf3lOQ2a5Wqqx9unZlmNvRMP9iQ1pocQM9eLiZI8eYgPSdcuJkGTXwt1hwK4CwIeaM2Km45nGAmtw79NXENi0A2jkhultiBaY1JGI7grvsTvW9EzjkGn012zt5zb5Ypm-2BpZpvRAU9hjGVoiwmYYxe9qiNgERXBqox-2Fzo51pDMEbtF-2BjBh0BFZgEVNI6e4xu-2B-2FL2Sfm2VWWUM3HB05Az4gqs0E-2FHUKtcIT8xjYOAg5nVT5sVXKXc0rBFh6hVbf-2B-2BIDSaRBOi3iXovX1NGep0BM7ir-2FRFGv8rZ3W85nd3-2FvLG" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="@t!gP3Vr">
-        
-    </div>
-</div>
-    </li>
-
-     <!-- Sección-8 -->
-     <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Charla sobre pagos, condicionales, sentencia if, operador ternario y la sentencia switch.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>10 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://u15570388.ct.sendgrid.net/ls/click?upn=u001.BGhqzrz1VcIjFe5pPsQgyIinI6t3a36DsBqZkHNyeVUgG3IyvUg0gAx76K422sh6aNzDKLUiLyEdACk8jY8pRx3-2FYrz0b8HMSh62loby6LMLI-2BPhYu2PziT0ukdGTwQl9syruWljmsECG2AfoW8-2BIsk-2FVucqPPlhIrAxvEN-2ByHY-3DS7Wx_esAI5W-2Ba8UqwnmmGEdev0D4eWBITO41iuRFSoxpDZzBW7ukjLpCXrgzhKLBDI-2BeSjU4I0B2rUB9x2mCeD1rTvxE1myuyBWPk5WUdJnKELPvGNm3VuOnopDRD6ZKzyNwhmkp3bAl9Bx1c-2FV2pN-2BOYB3z6pFnLeRiBdv84vM96totlpOm0fwwse-2F-2FDtRKFmCmf6VCNjkqmb5GyaURWZ6JoSwb4ToPbUCazD4e1FfZTilOYM0-2BeyhgGtyovvissbSs-2FWIV-2B0K9Bm4iq0IrkS-2Fa2SHnS0eZrYu5oJHat7fd1djbWSiQfu7tcUQ15yRN9qJfjUL0Zqb1AL3ApTuGzDMYhFUGfXF9i64HjXAbn8yYIu4L286xZv0-2FRHWeiGtw13LQ3uGiGshjfdpFnh6rojta4Lda8Z-2Fb34mrAcYHnydzirFuNc1hUc8xnfp3MG8P75ZV7FaLycZff1m-2FRS8mEIx0qEJqBeAJFjKXwMia5bvRBpRcMpnaa7FrMNut5ASDuMmXD5IyzJIonkfFyumYhJ7e7v3nunFQg4e42Yr3FQF0qtFhycRqP-2B-2FiqIkxivEJDngr9NWCda-2BJoH-2Beqn7XmDq4apwu9vv3kfTHBZ4o7XZ-2F4cAF4FE-2F99ba11lDuO3gGOKlpyVKKbtHzr44Ds-2FQxTtJD3XDjdO7V8wpeGRfR9eOdgvVQ3COnOXeHrY-2BmYHSWVRkvxKBNWqy8V0qi7hfq7Bv6W-2BuMt3FjBAn66nKqEadlFZWJVoY49aNQxPo-2F611G659mvshdOOR6wjVntdhoLTtk-2BNbXYJBSw7oilpqa6gXoyDjOw4PkhE2Q4w5SwsuYow9K" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="Z65@.i!i">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-9 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Bucles while, do while y for.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>11 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://us02web.zoom.us/rec/share/OlK1xRTnH4M3uux9Fx7uQEflcBfWt3z6FtKJiS65aTa_TbxFGb2-IPp0PMulDr79.C7luYbNCZJGVanj7" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="#N!2d7?x">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-10 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Métodos para arreglos y objetos.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>12 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://us02web.zoom.us/rec/share/5s80qu-2UK1LFGYc2-nT_9GJCjQX_n4xChd-_OPDvGAPEU1XyIA5H0PajYFC-pW3._qLvmxvjhiRb2naF" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="08TAbf*m">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-11 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Introducción a HTML, conceptos básicos y estructura básica de un documento HTML.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>15 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="html">&#60;HTML&#62;
-        </mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://us02web.zoom.us/rec/share/QAiOwgd2ZVbvCxDLScEa9_U-U6RaVgFH8DOGx46wMn8GG-8A5iR1FHTb5PvZmu0Z.iUF-42e8PKa-O1GB" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="GrbL=s7W">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-12 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Jerarquía de los encabezados y párrafos, elementos de bloque y en línea, etiquetas de presentación y semánticas, etiquetas de estructura semántica y elementos HTML (listas, tablas, multimedia).</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>16 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="html">&#60;HTML&#62;
-        </mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://us02web.zoom.us/rec/share/-sIUzQhZnXida_eWC2o1Y7EaSGCPwcHI6KpRT7RJzez2Nd7ke5yvpVxx-7HA0noO.oFKIMvxQWB__4f8U" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="?1PVWufP">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-13 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">La etiqueta audio, elementos incrustados y los elementos de formulario. Actividad en grupo.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>17 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="html">&#60;HTML&#62;
-        </mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://us02web.zoom.us/rec/share/kyiibSlTocNT9Mrb1jbiCWw-mnur6H8KPWgzcWelBuCr4y6TjvkuscVZVuGT8L-b.7cdJEi0pva-9VApf" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="xGr!yy2r">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-14 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Terminando con elementos de formulario y la introducción a HTML.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>18 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="js">&#60;JAVASCRIPT&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://us02web.zoom.us/rec/share/VZIAhKlOhG_9zi0CW13QfC6CQBBefbX0dUSAWzuGjwlhsA0joTsC7bQpRryQ5cAo.teXwtYiZarfD64Zh" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="ST%P71fW">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-15 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Introducción a CSS, básicos de CSS, reglas y selectores.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>19 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="css">&#60;CSS&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://us02web.zoom.us/rec/share/GpBxxpF8YaQI1ecLncsYaxApCZRO1NWi6akNRhQrIQr-21qsnVaM5-bXsJmH3lHa.ZzeCk74GLUDy9ewI" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="Y4?1&i6q">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-16 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Pseudo-clases y pseudo-elementos, el algoritmo de CSS, cascada, especificidad, la importancia. </label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>22 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="css">&#60;CSS&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://us02web.zoom.us/rec/share/O9H3ZFyiQ1JdiLTHC801keZEzhz9SV8s_vUfAIpP1UvVrLCEL2H5Lqu-P0av-xOn.rbAyhLGSqjx7SeuM" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="Rt^s9#t2">
-        
-    </div>
-</div>
-    </li>
-
-    <!-- Sección-17 -->
-    <li>
-        <!-- Título del acordeón -->
-<label for="acordeon-toggle1" class="acordeon-titulo">Herencia en CSS, modelo de caja, dimensiones ancho, alto, máximos y mínimos. Overflow controlar el desbordamiento, relleno, borde y redondeo.</label>
-
-<!-- Checkbox que controla el acordeón -->
-<input type="checkbox" id="acordeon-toggle1" class="acordeon-toggle" />
-
-<!-- Contenedor del contenido del acordeón -->
-<div class="acordeon-contenido">
-    <!-- Contenido del acordeón -->
-    <div>
-        <!-- Fecha de la clase -->
-        <p class="fecha">Fecha: <i>23 de abril de 2024</i></p>
-        <!-- Tecnología a estudiar -->
-        <p><mark class="pregunta">Tecnología:</mark><abbr title="Hypertext Markup Language"><mark class="css">&#60;CSS&#62;</mark></abbr></p>
-        
-        <!-- Hipervínculo a la página -->
-        <label for="link" class="pregunta">Enlace a la clase :</label>
-        <a class="respuesta" href="https://us02web.zoom.us/rec/share/Tovrdvq4V2LZk8noMiQ8q1rx4Gl31ioCaFT6nv-XeW2gSmS3hAfUqm6HvYLNF04.oacDCBD-7G5wc2Nf" id="link" target="_blank">¡¡CLICK AQUÍ!!</a>
-        <br><br>
-        <!-- Contraseña de la clase -->
-        <label for="textoACopiar" class="pregunta">Contraseña:</label>
-        <input class="respuesta" type="text" id="textoACopiar" value="B+Y1GD=B">
-        
-    </div>
-</div>
-    </li>
  
-   
-
-    </main>
-
-        <div>
-    <h3>Sección-2</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi rem quaerat cum aut laboriosam a. Nihil, facilis! Distinctio quis magni eveniet ea <mark>hola soy un marcado</mark> mollitia aliquam illum! Praesentium ducimus tenetur quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quisquam ex dolor labore quae iste vitae quod, culpa voluptates similique, rerum placeat vero qui debitis earum sint. Dolore, beatae saepe.</p>
-
-    <img src="img/imagen1.jpg" alt="imagen">
-
-</d>
-</div>  
-
-<footer>Esta pagina fue creada por Diaz para uso personal no empresarial y reserva todos los derechos de autor xd © </footer>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var acordeonContenidos = document.querySelectorAll('.acordeon-contenido');
-
-        acordeonContenidos.forEach(function(contenido) {
-            contenido.style.display = 'none'; // Oculta todos los contenidos al cargar la página
-        });
-
-        var checkboxes = document.querySelectorAll('.acordeon-toggle');
-
-        checkboxes.forEach(function(checkbox) {
-            checkbox.addEventListener('change', function() {
-                // Desactivar todos los demás checkboxes
-                checkboxes.forEach(function(cb) {
-                    if (cb !== checkbox) {
-                        cb.checked = false;
-                    }
-                });
-
-                // Cerrar todos los contenidos del acordeón
-                acordeonContenidos.forEach(function(contenido) {
-                    contenido.style.display = 'none';
-                });
-
-                var contenido = this.nextElementSibling;
-
-                if (contenido.style.display === 'block') {
-                    contenido.style.display = 'none';
-                    this.checked = false; // Desactivar el checkbox si se cierra la sección
-                } else {
-                    contenido.style.display = 'block';
-                }
-            });
-        });
-    });
-</script>
-
-</body>
-</html>
-
-<!-- Creditos:
-
-alt 0142   Ž 
-alt 0194   Â
-alt 64     @
-           y
-
-
-⚡  -->

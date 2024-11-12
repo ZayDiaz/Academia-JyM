@@ -1,0 +1,54 @@
+body{
+    overflow: hidden;
+}
+
+.acordeon-contenido{
+    display: none; /*Ocultar todos los contenidos al cargar la pagina*/
+    float: right; /*Alinea el contenido a la derecha*/
+    max-width: 50%; /*Establece un ancho maximo al contenido*/
+}
+
+.active {
+    background-color: #4CAF50; /* Cambiar el color cuando esté activado */
+    color: white;
+}
+
+.cuadrícula {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columnas */
+    grid-template-rows: repeat(5, 1fr);    /* 5 filas */
+    gap: 4px; /* Espacio entre las celdas */
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    box-sizing: border-box;
+}
+
+.item-1 {
+    grid-row: span 5; /* Ocupa 5 filas */
+    width: 150px;
+    background-color: rgb(17, 82, 82);
+}
+
+.item-2 {
+    grid-column: span 7; /* Ocupa 7 columnas */
+    background-color: rgb(17, 82, 82);
+    display: flex;
+    align-items: center; /* Centra el botón verticalmente */
+    justify-content: center; /* Centra el botón horizontalmente */
+}
+
+.item-3 {
+    grid-column: 2 / span 7;
+    grid-row: 2 / span 4;
+    background-color: aquamarine;
+    overflow-y: auto;
+    white-space: normal;
+    padding: 10px;
+    border: 10px rgb(17, 82, 82) solid; /* Establece un borde de 10px de grosor, color rojo y estilo sólido. */
+    margin: 10px; /* Añade un margen de 10px alrededor del elemento. */
+}
+
+.item-3 h1{
+    font-size: 100px;
+}
+
